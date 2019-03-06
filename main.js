@@ -30,5 +30,17 @@ function countMyWater(array) {
         return end;
     }
 
+//counting water in the LAKE
+    array.forEach(function (item, i, arr) {
+        lakeEnd = findLakeEnd(lakeStart, arr);
+        if (i == lakeEnd) {
+            lakeStart = lakeEnd;
+        }
 
+        if (lakeStart < i && i < lakeEnd) {
+            totalWaterAmmount += Math.min(arr[lakeStart], arr[lakeEnd]) - arr[i];
+        }
+
+    })
+    return totalWaterAmmount;
 }
