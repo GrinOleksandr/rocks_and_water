@@ -44,3 +44,23 @@ function countMyWater(array) {
     })
     return totalWaterAmmount;
 }
+
+
+//testing
+let testArray = [2, 5, 1, 3, 1, 2, 1, 7, 7, 6];
+console.log(`there is ${countMyWater(testArray)} units of water in mountains of  ${testArray}  after the rain.`);
+
+testArray = [2, 1, 5, 0, 3, 4, 7, 2, 3, 1, 0];;
+console.log(`there is ${countMyWater(testArray)} units of water in mountains of  ${testArray}  after the rain.`);
+
+testArray = [7, 0, 1, 3, 4, 1, 2, 1];
+console.log(`there is ${countMyWater(testArray)} units of water in mountains of  ${testArray}  after the rain.`);
+
+testArray = [2, 2, 1, 2, 2, 3, 0, 1, 2] ;
+console.log(`there is ${countMyWater(testArray)} units of water in mountains of  ${testArray}  after the rain.`);
+
+testArray = [2, 1, 5, 0, 3, 4, 7, 2, 3, 1, 8] ;
+console.log(`there is ${countMyWater(testArray)} units of water in mountains of  ${testArray}  after the rain.`);
+
+testArray = [2, 2, 2, 2, 2];
+console.log(`there is ${countMyWater(testArray)} units of water in mountains of  ${testArray}  after the rain.`);
